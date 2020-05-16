@@ -1,0 +1,64 @@
+@PrimaryKey(autoGenerate = true)
+    @NonNull
+    @ColumnInfo(name = "museumId")
+    private int mId;
+
+    @Nullable
+    @ColumnInfo(name = "CreationDate")
+    private String mCreateDate;
+
+    private String mCreationDate;
+    private String mTitle;
+    
+
+    public Museum(@Nullable String CreationDate, String Title, String Establishment, int Grade) {
+        mCreationDate = creationDate;
+        mTitle = title;
+        mEstablishment = establishment;
+        mGrade = grade;
+    }
+
+    public int getId() {
+        return mId;
+    }
+
+    public void setId(int id) {
+        mId = id;
+    }
+
+    public String getCreationDate() {
+        return mCreationDate;
+    }
+
+    public void setCreationDate(String creationdate) {
+         mCreationDate = creationdate;
+    }
+
+    public String getTitle() {
+        return mTitle;
+    }
+
+    public void setTitle(String title) {
+        mTitle = title;
+    }
+
+    public String getEstablishment() {
+        return mEstablishment;
+    }
+
+    public void setEstablishment(String establishment) {
+        mEstablishment = establishment;
+    }
+
+    public int getGrade() {
+        return mGrade;
+    }
+
+    public void setGrade(String grade) {
+        mGrade = grade;
+    }
+
+    private String mEstablishment;
+    private int mGrade;
+
+}
